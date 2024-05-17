@@ -10,6 +10,10 @@
    - Lens distortion (radial distortion)
    - Homography estimation
 3. Week
+   - Epipolar lines
+   - Fundamental matrix
+   - Essential matrix
+   - Triangulation
 4. Week
 5. Week
 6. Week
@@ -128,7 +132,42 @@ $$p_d = K\Pi^{-1}(dist(\Pi([R|t]Q)))$$
 **Homography** Maps one view of a plane to another.
 
 
+# Week 3
 
+
+**Epipolar lines**  
+A point seen in one camera spans a line which can be seen in another camera.
+
+A point seen from two different cameras speens two different lines. This two lines forms an **epipolar plane**.
+
+The intersection of the epipolar plane and image plane is the **epipolar line**. Found using $l=Fp_1$.
+
+**Epipole** is where all the epilolar lines from one camera intersect. It is the other cameracenter projected on the imageplane.
+
+$q$ 2d point in pixels  
+$p$ 3d point in camera frame of reference  
+$$q = Kp$$
+$$p = K^{-1}q$$
+
+
+**Essential matrix**
+Where $p_1$ is a point on the camera plane.
+
+$$E=[t]_\times R$$
+
+Where the normal to the plane is $n=Ep1$
+
+$$p_2^TEp_1=0$$
+
+**Fundamental matrix**  
+$$F=K_2^{-T}EK_1^{-1}$$
+$$q_2^TFq_1=0$$
+
+Has 7 degrees of freedom.
+
+
+**Triangulation**
+Using SVD minimizes a linear problem. Error is not optimal, as it weights error by the scale (the point measured from a camera far away has a largers impact on the error).
 
 
 <!-- 
