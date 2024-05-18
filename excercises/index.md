@@ -22,6 +22,12 @@
    - Levenberg-Marquardt algorithm (solving non-linear optimization problems)
    - Rotation parameterization of rotation for optimization
 6. Week
+   - Simple features
+   - Image correspondence problem
+   - Image features
+   - Image filtering
+   - Harris corner detection
+   - Canny edge detection
 7. Week
 8. Week
 9. Week
