@@ -32,6 +32,9 @@
    - Hough transform
    - RANSAC algorithm
 8. Week
+   - BLOB detection using Difference-of-Gaussians (DoG)1
+   - SIFT features
+   - Feature matching
 9. Week
 0. Week
 1. Week
