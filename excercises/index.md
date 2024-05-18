@@ -18,6 +18,9 @@
    - Direct linear transform camera calibration
    - Zhang's checkerboard camera calibration
 5. Week
+   - Non-linear optimization
+   - Levenberg-Marquardt algorithm (solving non-linear optimization problems)
+   - Rotation parameterization of rotation for optimization
 6. Week
 7. Week
 8. Week
@@ -176,7 +179,30 @@ Has 7 degrees of freedom.
 Using SVD minimizes a linear problem. Error is not optimal, as it weights error by the scale (the point measured from a camera far away has a largers impact on the error).
 
 
+# Week 5
 
+**Non linear optimization**  
+$$e(x) = ||g(x) - y||_2^2 = f(x)^Tf(x)$$
+
+**Euler angle**  
+Rotate the object for each direction serially. Risks gimbal lock, meaning two parameters will rotate the same direction in certain situations (singularitys).
+
+Works well if initial guess is good -> parameters will stay close to 0.
+
+When using finite differentation, parameterize rotation of 0 as $2\pi$
+
+
+**Axis angel**  
+Rotation around ortogonal unit axis.
+
+Convert to rotation matrix with `cv2.Rodrigues`. Is singular at **0**.
+
+
+**Quanternions**  
+Basically a complex number in 4D instead of 2D. Subject to $||q||_2=1$, has to be ajusted for when optimizing.
+
+
+ 
 <!-- 
 $$
 \left[
