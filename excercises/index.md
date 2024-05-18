@@ -29,6 +29,8 @@
    - Harris corner detection
    - Canny edge detection
 7. Week
+   - Hough transform
+   - RANSAC algorithm
 8. Week
 9. Week
 0. Week
