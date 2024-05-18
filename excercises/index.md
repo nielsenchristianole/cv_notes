@@ -15,6 +15,8 @@
    - Essential matrix
    - Triangulation
 4. Week
+   - Direct linear transform camera calibration
+   - Zhang's checkerboard camera calibration
 5. Week
 6. Week
 7. Week
@@ -25,6 +27,10 @@
 2. Week
    - Guest lecture from Trackman
 3. Week
+
+
+# TODO
+ - Fix extrinsics for week 4 Zhang
 
 
 # Week 1
@@ -168,6 +174,7 @@ Has 7 degrees of freedom.
 
 **Triangulation**
 Using SVD minimizes a linear problem. Error is not optimal, as it weights error by the scale (the point measured from a camera far away has a largers impact on the error).
+
 
 
 <!-- 
