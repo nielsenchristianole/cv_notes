@@ -39,6 +39,8 @@
    - Eight point algorithm for estimating fundamental matrix
    - Fundamental matrix with RANSAC
 0. Week
+   - RANSAC for fitting homographies
+   - Stitching panoramas
 1. Week
 2. Week
    - Guest lecture from Trackman
