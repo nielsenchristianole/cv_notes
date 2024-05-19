@@ -36,6 +36,8 @@
    - SIFT features
    - Feature matching
 9. Week
+   - Eight point algorithm for estimating fundamental matrix
+   - Fundamental matrix with RANSAC
 0. Week
 1. Week
 2. Week
