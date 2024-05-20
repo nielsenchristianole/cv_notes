@@ -42,6 +42,10 @@
    - RANSAC for fitting homographies
    - Stitching panoramas
 1. Week
+   - Essential matrix decomposition
+   - Translation scale unceartanty
+   - Perspective-$n$-Point problem
+   - Visual odometry
 2. Week
    - Guest lecture from Trackman
 3. Week
@@ -182,6 +186,8 @@ $$E=[t]_\times R$$
 Where the normal to the plane is $n=Ep1$
 
 $$p_2^TEp_1=0$$
+
+Has 5 degrees of freedom
 
 **Fundamental matrix**  
 $$F=K_2^{-T}EK_1^{-1}$$
