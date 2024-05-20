@@ -49,6 +49,9 @@
 2. Week
    - Guest lecture from Trackman
 3. Week
+   - Laser line scanning
+   - Gray code encoding
+   - Phase shift encoding
 
 
 # TODO
